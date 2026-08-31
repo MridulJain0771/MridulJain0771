@@ -20,11 +20,29 @@ I am a backend-focused software engineer with **3+ years of full-time experience
 |---|---|
 | Backend | Python, FastAPI, Tornado, REST APIs |
 | Databases & Caching | PostgreSQL, SQL, Redis |
+| Async & Distributed Work | Celery, background jobs, idempotent APIs |
 | Data & AI | PySpark, Pandas, NumPy, PyMuPDF, LLM pipelines |
-| Cloud & DevOps | AWS Lambda, S3, Textract, Docker, Jenkins |
+| Cloud & DevOps | AWS Lambda, S3, Textract, Docker, Jenkins, GitHub Actions |
 | Engineering | Distributed Systems, Git, Linux, API Performance |
 
 ## Featured Projects
+
+### [TaskForge API](https://github.com/MridulJain0771/taskforge-api) ⭐ Flagship Backend Project
+
+[![TaskForge CI](https://github.com/MridulJain0771/taskforge-api/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/MridulJain0771/taskforge-api/actions/workflows/ci.yml)
+
+Production-style backend service built around the concerns that matter beyond CRUD: authentication, persistence, caching, rate limiting, retries, background processing, idempotency, migrations, observability, container security and automated CI.
+
+**Engineering highlights:**
+- FastAPI + async SQLAlchemy + PostgreSQL
+- Redis-backed rate limiting and Celery infrastructure
+- JWT authentication and scrypt password hashing
+- Idempotent task creation with `Idempotency-Key`
+- Request IDs, structured JSON logging, liveness/readiness probes
+- Docker image running as a non-root user
+- CI validates dependencies, syntax, Ruff, migrations, unit tests, integration tests, API startup and Docker runtime
+
+**Tech:** Python, FastAPI, PostgreSQL, Redis, SQLAlchemy, Alembic, Celery, JWT, Docker, GitHub Actions
 
 ### [Voice2Story](https://github.com/MridulJain0771/voice2story)
 
@@ -49,6 +67,7 @@ Python desktop suite combining a music player, Tetris, Pong, and webcam/video ut
 - Backend services and REST APIs
 - FastAPI and Python applications
 - PostgreSQL data models and Redis caching
+- Background processing and queue-based workflows
 - API performance and scalability improvements
 - Document extraction and AI-assisted processing pipelines
 - Data automation and integration workflows
