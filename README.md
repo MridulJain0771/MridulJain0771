@@ -44,6 +44,24 @@ Production-style backend service built around the concerns that matter beyond CR
 
 **Tech:** Python, FastAPI, PostgreSQL, Redis, SQLAlchemy, Alembic, Celery, JWT, Docker, GitHub Actions
 
+### [DocFlow](https://github.com/MridulJain0771/docflow) — Distributed Document Processing
+
+[![DocFlow CI](https://github.com/MridulJain0771/docflow/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MridulJain0771/docflow/actions/workflows/ci.yml)
+
+Distributed PDF-processing backend designed around asynchronous work and queue reliability. Uploads return immediately with a durable job ID while Celery workers process documents in the background and expose progress, retries and final results through the API.
+
+**Engineering highlights:**
+- FastAPI upload and job-status APIs with HTTP `202 Accepted`
+- PostgreSQL-backed durable job state and progress tracking
+- Redis + Celery worker pipeline with retry semantics
+- SHA-256 duplicate detection with database uniqueness protection
+- PDF text extraction with page and character metrics
+- Completed-result download endpoint
+- Liveness/readiness probes and Docker Compose stack
+- CI validates dependencies, Ruff, migrations, unit/integration tests and Docker build security
+
+**Tech:** Python, FastAPI, PostgreSQL, Redis, SQLAlchemy, Alembic, Celery, PyMuPDF, Docker, GitHub Actions
+
 ### [Voice2Story](https://github.com/MridulJain0771/voice2story)
 
 Python desktop application that converts voice, typed prompts, and document context into AI-assisted conversations, articles, visual storyboards, and narrated videos.
