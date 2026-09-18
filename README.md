@@ -62,6 +62,23 @@ Distributed PDF-processing backend designed around asynchronous work and queue r
 
 **Tech:** Python, FastAPI, PostgreSQL, Redis, SQLAlchemy, Alembic, Celery, PyMuPDF, Docker, GitHub Actions
 
+### [CampusOS](https://github.com/MridulJain0771/CampusOS) — Multi-Tenant School Management SaaS
+
+[![CampusOS CI](https://github.com/MridulJain0771/CampusOS/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MridulJain0771/CampusOS/actions/workflows/ci.yml)
+
+Production-style school management backend modeling real multi-tenant workflows across academics, people, finance and administration.
+
+**Engineering highlights:**
+- Multi-school tenant isolation with JWT authentication and role-based access control
+- Student enrollment → grade/section → classroom → class teacher → subject-teacher mappings
+- Student admission/withdrawal/readmission and staff joining/termination/rehire history
+- Fee structures, invoices, discounts, late fees, idempotent payments, refunds and ledgers
+- Exams, subject scores, report cards and important student/staff/school document records
+- Effective-dated salary structures, payroll runs/payments and expenditure tracking
+- PostgreSQL, Redis/Celery, Alembic migrations, audit logs, Docker and automated CI
+
+**Tech:** Python, FastAPI, PostgreSQL, Redis, SQLAlchemy, Alembic, Celery, JWT, Docker, GitHub Actions
+
 ### [Voice2Story](https://github.com/MridulJain0771/voice2story)
 
 Python desktop application that converts voice, typed prompts, and document context into AI-assisted conversations, articles, visual storyboards, and narrated videos.
