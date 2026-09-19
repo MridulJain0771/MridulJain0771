@@ -62,22 +62,19 @@ Distributed PDF-processing backend designed around asynchronous work and queue r
 
 **Tech:** Python, FastAPI, PostgreSQL, Redis, SQLAlchemy, Alembic, Celery, PyMuPDF, Docker, GitHub Actions
 
-### [CampusOS](https://github.com/MridulJain0771/CampusOS) — Multi-Tenant School Management SaaS
+### [CampusCore](https://github.com/MridulJain0771/CampusCore) — Multi-Tenant School / College Management Platform
 
-[![CampusOS CI](https://github.com/MridulJain0771/CampusOS/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MridulJain0771/CampusOS/actions/workflows/ci.yml)
-
-Production-style school management backend modeling real multi-tenant workflows across academics, people, finance and administration.
+CampusCore is the active school-management project, built around organization-scoped authentication, enrollment, permissions and academic administration.
 
 **Engineering highlights:**
-- Multi-school tenant isolation with JWT authentication and role-based access control
-- Student enrollment → grade/section → classroom → class teacher → subject-teacher mappings
-- Student admission/withdrawal/readmission and staff joining/termination/rehire history
-- Fee structures, invoices, discounts, late fees, idempotent payments, refunds and ledgers
-- Exams, subject scores, report cards and important student/staff/school document records
-- Effective-dated salary structures, payroll runs/payments and expenditure tracking
-- PostgreSQL, Redis/Celery, Alembic migrations, audit logs, Docker and automated CI
+- Unified authentication with organization-scoped RBAC
+- Student/staff enrollment and account lifecycle foundations
+- Class/group assignment, curriculum configuration and academic calendar workflows
+- Repository/service layering for backend business rules
+- React + TypeScript frontend with route/feature separation
+- Local development without requiring Docker
 
-**Tech:** Python, FastAPI, PostgreSQL, Redis, SQLAlchemy, Alembic, Celery, JWT, Docker, GitHub Actions
+**Tech:** Python, Django REST Framework, MongoDB, React, TypeScript, Vite, JWT
 
 ### [Voice2Story](https://github.com/MridulJain0771/voice2story)
 
