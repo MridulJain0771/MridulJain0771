@@ -62,24 +62,6 @@ Distributed PDF-processing backend designed around asynchronous work and queue r
 
 **Tech:** Python, FastAPI, PostgreSQL, Redis, SQLAlchemy, Alembic, Celery, PyMuPDF, Docker, GitHub Actions
 
-### [CampusCore](https://github.com/MridulJain0771/CampusCore) — Full-Stack Multi-Tenant School / College Management Platform
-
-CampusCore is a full-stack school/college operations platform with organization-scoped security and role-aware experiences for administrators, teachers/staff, students and parents. The backend is a Django REST API backed by MongoDB, while the React + TypeScript frontend provides dedicated workflows for each user type.
-
-**Engineering highlights:**
-- JWT authentication with rotating/revocable refresh tokens, active-account revalidation and Django PBKDF2 password hashing
-- Organization-scoped, permission-code RBAC with custom roles and tenant-isolated repository queries
-- Student, staff and parent enrollment, user management, parent-child relationships and class/section assignment
-- Flexible academics model covering academic years, classes, sections, student groups, subjects, subject offerings and staff responsibilities
-- Conflict-aware timetable scheduling with room, teacher and student-audience collision checks plus room-capacity validation
-- Attendance and leave workflows with policies, approvals, teacher class rosters, attendance history and percentage calculation
-- Exam scheduling with room/staff/student conflict detection and automatic cancellation of overlapping timetable periods
-- Announcements and role-specific dashboards plus student academics, parent child views and staff teaching calendars
-- React frontend with protected/permission-aware routing, TanStack Query, React Hook Form, Zod and reusable UI components
-- Layered backend architecture using DRF views/serializers → services → MongoDB repositories with audit logging and automated API tests
-
-**Tech:** Python, Django, Django REST Framework, MongoDB, PyMongo, JWT, React 19, TypeScript, Vite, TanStack Query, React Router, React Hook Form, Zod, Tailwind CSS
-
 ### [Voice2Story](https://github.com/MridulJain0771/voice2story)
 
 Python desktop application that converts voice, typed prompts, and document context into AI-assisted conversations, articles, visual storyboards, and narrated videos.
